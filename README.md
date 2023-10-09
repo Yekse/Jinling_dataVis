@@ -10,4 +10,5 @@
     ![Image text](./src/images/python.jpg)
 
 4.在浏览器地址栏中输入：localhost:8000 
+
     ![Image text](./src/images/website.jpg)
