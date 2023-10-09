@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Map of JinLing</title>
+<script src="./src/leaflet/leaflet.js" charset="utf-8"></script>
+<link rel="stylesheet" href="./src/leaflet/leaflet.css" />
+<script src="http://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+</head>
+
+<style>
+    @font-face{font-family:'ZoomlaJianmingLi-A047';/*逐浪新隶体*/
+    src: url('https://code.z01.com/font/ZoomlaJianmingLi-A047.eot?#iefix'); /* IE9 */
+    src: url('https://code.z01.com/font/ZoomlaJianmingLi-A047.eot?#iefix') format("embedded-opentype"), /* IE6-IE8 */
+    url('https://code.z01.com/font/ZoomlaJianmingLi-A047.woff') format("woff"), /* chrome、firefox */
+    url('https://code.z01.com/font/ZoomlaJianmingLi-A047.ttf') format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url('https://code.z01.com/font/ZoomlaJianmingLi-A047.svg#ZoomlaJianmingLi-A047') format("svg"); /* iOS 4.1- */
+    font-style: normal; font-weight: normal;}
+</style>
+<body>
+    <div style="top: 0;color: rgb(211, 16, 45); font-size: 3em;font-family:ZoomlaJianmingLi-A047; text-align: center; align-items: center;">金陵历朝地点</div>
+    <div style="position: relative; ">
+        <video id="bgVideo" autoplay loop muted style="position: relative">
+            <source src="./src/video/bgVideo.mp4" type="video/mp4">
+        </video>
+
+        <div style="position: relative; top:8%; z-index: 1; " > 
+            <div id="map" style="width: 110em; height: 60em; left: 14%"></div>
+            <a href="./src/wordCloud.html" target="_blank" >
+                <button style="position: absolute; top: 0; left: 0.5%; ;font-family:ZoomlaJianmingLi-A047; font-size: 2.5em;
+                background-color: transparent; border : none; color : black;">词云图</button>
+            </a>
+            <a href="./src/member.html" target="_blank" >
+                <button style="position: absolute; top: 10%; left: 0.5%; ;font-family:ZoomlaJianmingLi-A047; font-size: 2.5em;
+                background-color: transparent; border : none; color : black;">成员分工</button>
+            </a>
+            <a href="./src/nanjing_map_with_points.html" target="_blank" >
+                <button style="position: absolute; top:0; right: 0.5%; ;font-family:ZoomlaJianmingLi-A047; font-size: 2.7em;
+                background-color: transparent; border : none; color : black;">南京民国地名</button>
+            </a>
+            <div id="descreption" style="position: relative; left: 14%; font-family:ZoomlaJianmingLi-A047; font-weight:500; font-size: 1em;;width: 110em;">
+                <div id="descriptionContainer" ></div>
+                <div id="eventContainer" style="font-family:ZoomlaJianmingLi-A047;"></div>
+                <div id="worksContainer" style="font-family:ZoomlaJianmingLi-A047;"></div>
+            </div>  
+        </div>
+        <script src="./src/main.js" charset="utf-8" style="position: relative; left: 10%" ></script>
+    </div>
+    
+</body>
+</html>
